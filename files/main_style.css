@@ -196,7 +196,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
  #header { display: block; padding-top: 1.8em !important; padding-bottom: 1em !important; }
  .splash-page #header { display: table; }
  #logo .wsite-logo { max-width: 100%; overflow: hidden; box-sizing: border-box; }
- #logo .wsite-logo #wsite-title { font-size: inherit !important; }
+ #logo .wsite-logo #wsite-title { font-family: Roboto, sans-serif; font-style: normal; font-size: inherit !important; }
  #logo .wsite-logo img { max-height: 32px !important; }
  #logo, #header-right { display: block; text-align: center; width: 100% !important; max-width: 100% !important; margin: 0 auto; }
  #header-right { padding-top: 1.75em !important; }
