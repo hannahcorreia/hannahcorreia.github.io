@@ -31,8 +31,8 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
  a:hover, .wsite-com-link { text-decoration: none; }
  h2 { font-size: 1.3em; margin: 0 auto 1em; line-height: 1.25; font-weight: lighter; }
  .wsite-content-title, #banner h2, .blog-title, h2#wsite-com-title { font-size: 1.5em; font-family: 'Roboto', sans-serif; margin: 0 auto 1em; font-weight: bold; color: #000000; }
- div.paragraph, .paragraph { font-size: 1em; line-height: 1.5; margin: 0 auto 1.6em; }
- p, .paragraph { font-size: 1em; line-height: 1.5; margin: 0 auto 1.6em; }
+ div.paragraph, .paragraph { font-family: 'Karla', Arial, sans-serif !important; font-size: 1em; line-height: 1.5; margin: 0 auto 1.6em; }
+ p, .paragraph { font-family: 'Karla', Arial, sans-serif !important; font-size: 1em; line-height: 1.5; margin: 0 auto 1.6em; }
  blockquote { border-left: 15px solid #e5e5e5 !important; }
  .wsite-button, .blog-button { font-size: .92em !important; padding: 15px 35px !important; background: #383838 !important; color: #ffffff !important; letter-spacing: 1px; font-weight: bold !important; text-transform: uppercase; border: none !important; border-radius: 3px !important; height: auto !important; -webkit-transition: all 100ms cubic-bezier(0.55,0.085,0.68,0.53) !important; -moz-transition: all 100ms cubic-bezier(0.55,0.085,0.68,0.53) !important; -o-transition: all 100ms cubic-bezier(0.55,0.085,0.68,0.53) !important; -ms-transition: all 100ms cubic-bezier(0.55,0.085,0.68,0.53) !important; transition: all 100ms cubic-bezier(0.55,0.085,0.68,0.53) !important; }
  .wsite-button-inner, .blog-button > span { display: inline-block !important; background: none !important; min-width: 10px !important; min-height: 10px !important; height: auto !important; padding: 0 !important; margin: 0 !important; line-height: 1 !important; font-size: inherit !important; color: inherit !important; font-weight: 400 !important; }
@@ -113,7 +113,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
  #banner-wrap { width: 100%; }
  #banner { padding: 3.5em; text-shadow: 0px 0px 1px rgba(0,0,0,0.3); font-weight: bold; box-sizing: border-box; }
  #banner h2 { margin: 0 auto .8em; color: #ffffff; font-size: 3.5em; letter-spacing: 2px; line-height: 1.2; }
- #banner .paragraph { color: #ffffff; font-size: 1.2em; margin: 0 auto 2.5em; }
+ #banner .paragraph { font-family: 'Karla', Arial, sans-serif !important; color: #ffffff; font-size: 1.2em; margin: 0 auto 2.5em; }
  #banner a { color: #ffffff; }
  #banner .button-wrap { display: inline-block; }
  .header-page .wsite-header-section { background: url(theme/images/splash-bg.jpg?1532066272) no-repeat center center; background-size: cover; height: 550px; }
@@ -134,7 +134,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
  .splash-page #content-bg { display: block; vertical-align: middle; margin: 0 auto; max-width: 700px; padding: 1.4em; margin: 2.5em auto; box-sizing: border-box; }
  .splash-page #content { padding: 3.5em 2.5em 7em; display: block; min-width: 300px; min-height: 150px; color: #ffffff; }
  .splash-page h2 { color: #ffffff; font-size: 3.5em; line-height: 1.2; margin: 0 auto .5em; }
- .splash-page .paragraph { font-size: 1.2em; }
+ .splash-page .paragraph { font-family: 'Karla', Arial, sans-serif !important; font-size: 1.2em; }
  .splash-page #footer-wrap { display: none; }
  .wsite-com-content { padding: 0 !important; }
  .wsite-com-category-subcategory, #wsite-com-breadcrumbs { margin: 0 auto 2.5em !important; }
