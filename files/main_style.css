@@ -37,7 +37,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
  a[href] { text-decoration: underline; }
  a:hover, .wsite-com-link { text-decoration: none; }
  h2 { font-size: 1.3em; margin: 0 auto 1em; line-height: 1.25; font-weight: lighter; }
- .wsite-content-title, #banner h2, .blog-title, h2#wsite-com-title { font-size: 1.5em; font-family: 'Roboto Condensed', sans-serif; margin: 0 auto 1em; font-weight: bold; color: #000000; }
+ .wsite-content-title, #banner h2, .blog-title, h2#wsite-com-title { font-size: 1.5em; font-family: 'Roboto', sans-serif; margin: 0 auto 1em; font-weight: bold; color: #000000; }
  div.paragraph, .paragraph { font-size: 1em; line-height: 1.5; margin: 0 auto 1.6em; }
  p, .paragraph { font-size: 1em; line-height: 1.5; margin: 0 auto 1.6em; }
  blockquote { border-left: 15px solid #e5e5e5 !important; }
