@@ -37,7 +37,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
  a[href] { text-decoration: underline; }
  a:hover, .wsite-com-link { text-decoration: none; }
  h2 { font-size: 1.3em; margin: 0 auto 1em; line-height: 1.25; font-weight: lighter; }
- .wsite-content-title, #banner h2, .blog-title, h2#wsite-com-title { font-size: 1.5em; font-family: 'Roboto Condensed', sans-serif !important; margin: 50 auto 1em; font-weight: bold; color: #000000; }
+ .wsite-content-title, #banner h2, .blog-title, h2#wsite-com-title { font-size: 1.5em; font-family: 'Roboto Condensed', sans-serif; margin: 0 auto 1em; font-weight: bold; color: #000000; }
  div.paragraph, .paragraph { font-size: 1em; line-height: 1.5; margin: 0 auto 1.6em; }
  p, .paragraph { font-size: 1em; line-height: 1.5; margin: 0 auto 1.6em; }
  blockquote { border-left: 15px solid #e5e5e5 !important; }
@@ -197,7 +197,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
  #header { display: block; padding-top: 1.8em !important; padding-bottom: 1em !important; }
  .splash-page #header { display: table; }
  #logo .wsite-logo { max-width: 100%; overflow: hidden; box-sizing: border-box; }
- #logo .wsite-logo #wsite-title { font-family: 'Roboto Condensed', sans-serif; font-style: 500; font-size: normal !important; }
+ #logo .wsite-logo #wsite-title { font-family: 'Roboto Condensed', sans-serif; font-weight: 300; font-size: normal !important; }
  #logo .wsite-logo img { max-height: 32px !important; }
  #logo, #header-right { display: block; text-align: center; width: 100% !important; max-width: 100% !important; margin: 0 auto; }
  #header-right { padding-top: 1.75em !important; }
