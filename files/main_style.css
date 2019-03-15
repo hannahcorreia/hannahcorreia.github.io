@@ -3,6 +3,10 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
  a img { border: 0; }
  body { line-height: 1; }
  html { width: 100%; height: 100%; }
+ html *
+{
+   font-family: 'Karla', Arial, sans-serif !important;
+}
  body { width: 100%; height: 100%; color: #525252; font-size: 14px; font-family: 'Karla', Arial, sans-serif; font-weight: 400; line-height: 1; background: #f3f3f3; word-wrap: break-word; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
  #wrapper { background: #f3f3f3; width: 100%; height: 100%; margin: 0; box-sizing: border-box; }
  #wrapper-content { width: 100%; min-height: 100%; margin: 0 auto; background: #ffffff; }
@@ -52,7 +56,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
  .wsite-com-category-subcategory-link:hover .wsite-com-category-subcategory-name-text { -ms-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); }
  .galleryCaptionHolderInner { position: relative; height: 100%; width: 100%; padding: 1.5em; box-sizing: border-box; border-collapse: initial !important; }
  .galleryCaptionInnerTextHolder { height: 100%; width: 100%; background: rgba(255,255,255,0.8); text-align: center; box-sizing: border-box; }
- .wsite-com-category-subcategory-name-text { width: 96%; text-align: center; display: inline-block; vertical-align: middle; box-sizing: border-box; font-size: 1.4em !important; font-family: 'Karla', Arial, sans-serif !important; line-height: 1.25; margin: 0 !important; padding: 1em .5em !important; color: #000000 !important; text-transform: uppercase; font-weight: bold !important; text-shadow: none; -ms-transform: scale(.75); -webkit-transform: scale(.75); transform: scale(.75); -webkit-transition: all 160ms cubic-bezier(0.55,0.085,0.68,0.53) !important; -moz-transition: all 160ms cubic-bezier(0.55,0.085,0.68,0.53) !important; -o-transition: all 160ms cubic-bezier(0.55,0.085,0.68,0.53) !important; -ms-transition: all 160ms cubic-bezier(0.55,0.085,0.68,0.53) !important; transition: all 160ms cubic-bezier(0.55,0.085,0.68,0.53) !important; }
+ .wsite-com-category-subcategory-name-text { width: 96%; text-align: center; display: inline-block; vertical-align: middle; box-sizing: border-box; font-size: 1.4em !important; font-family: 'Karla', Arial, sans-serif; line-height: 1.25; margin: 0 !important; padding: 1em .5em !important; color: #000000 !important; text-transform: uppercase; font-weight: bold !important; text-shadow: none; -ms-transform: scale(.75); -webkit-transform: scale(.75); transform: scale(.75); -webkit-transition: all 160ms cubic-bezier(0.55,0.085,0.68,0.53) !important; -moz-transition: all 160ms cubic-bezier(0.55,0.085,0.68,0.53) !important; -o-transition: all 160ms cubic-bezier(0.55,0.085,0.68,0.53) !important; -ms-transition: all 160ms cubic-bezier(0.55,0.085,0.68,0.53) !important; transition: all 160ms cubic-bezier(0.55,0.085,0.68,0.53) !important; }
  .wsite-com-category-subcategory-name:before { content: ''; display: inline-block; width: 1px; height: 100%; vertical-align: middle; }
  .wsite-com-category-subcategory-name { padding: 1.5em; top: 0; box-sizing: border-box; height: 100%; width: 100%; }
  .galleryCaptionInnerText { font-size: .9em; font-family: 'Karla', Arial, sans-serif; margin: 0 !important; padding: .5em !important; color: #000000 !important; text-transform: uppercase; font-weight: bold !important; }
@@ -93,7 +97,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
  #wsite-menus .wsite-menu { border: 1px solid #f3f3f3 !important; }
  #wsite-menus .wsite-menu li > .wsite-menu-wrap { margin-top: -1px !important; }
  #wsite-menus .wsite-menu li a { border: none !important; background: #ffffff !important; padding: 10px 15px !important; text-align: center; }
- .wsite-menu-arrow { font-family: 'Karla', Arial, sans-serif !important; }
+ .wsite-menu-arrow { font-family: 'Karla', Arial, sans-serif; }
  #navmobile { background: #f3f3f3; padding: 0 25px; box-sizing: border-box; height: 100% !important; overflow-y: scroll; -webkit-overflow-scrolling: touch; }
  #navmobile a, #navmobile li { display: block !important; text-align: left; font-size: 1.2em; padding-left: 0; padding-right: 0; }
  #navmobile a { padding-top: 8px; padding-bottom: 8px; line-height: 1.2; }
@@ -156,7 +160,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
  .blog-post .blog-separator { display: none !important; }
  .blog-comments { float: none !important; }
  .blog-sidebar { width: 250px; }
- .blogCommentOwner, .blogCommentHeading, .blogCommentHeadingInner, .blogCommentHeading .blogCommentAuthor span.name, .blogCommentHeading .blogCommentAuthor a.name, .blogCommentHeading .blogCommentAuthor, .blogCommentHeading .blogCommentDate, .blogCommentWrap { font-family: 'Karla', Arial, sans-serif !important; font-size: inherit !important; font-weight: inherit !important; background: none !important; text-shadow: none !important; height: auto !important; line-height: 1 !important; }
+ .blogCommentOwner, .blogCommentHeading, .blogCommentHeadingInner, .blogCommentHeading .blogCommentAuthor span.name, .blogCommentHeading .blogCommentAuthor a.name, .blogCommentHeading .blogCommentAuthor, .blogCommentHeading .blogCommentDate, .blogCommentWrap { font-family: 'Karla', Arial, sans-serif; font-size: inherit !important; font-weight: inherit !important; background: none !important; text-shadow: none !important; height: auto !important; line-height: 1 !important; }
  .blogCommentHeading .blogCommentAuthor span.name { font-weight: bold !important; }
  .blogCommentLevel1, .blogCommentLevel2 { border-left: 8px solid #f3f3f3; }
  .blogCommentOptions .blog-button { height: auto !important; }
