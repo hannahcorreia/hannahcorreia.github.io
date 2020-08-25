@@ -950,3 +950,8 @@ a:active {
     width: 100%;
   }
 }
+
+.icon-bar {
+    margin-left:0em;
+    margin-top:1em;
+}
