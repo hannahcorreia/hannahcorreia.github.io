@@ -23,6 +23,8 @@ Text Domain: blackandwhite
  *     3.2.1 - Main Nav CSS 3 Hover Effect
  * 4.0 - Home/Blog
  *   4.1 - Read More Button CSS 3 style
+ *   4.2 - Read More Button CSS 3 style - 2-line
+ *   4.3 - Two-column "featured" section
  * 5.0 - Widget
  * 6.0 - Footer
  * 7.0 - Header Search Bar
@@ -397,6 +399,18 @@ img {
     text-align:left;
 }
 
+.left50-center {
+    float: left;
+    width: 54%;
+    text-align:center;
+}
+
+.right50-center {
+    float: right;
+    width: 44%;
+    text-align:center;
+}
+
 .post-category,
 .post-date,
 .post-author {
@@ -435,7 +449,6 @@ img {
 	position: relative;
 	display: inline-block;
 	margin: 15px 25px;
-	letter-spacing: 1px;
 	font-weight: 400;
 	text-shadow: 0 0 1px rgba(255,255,255,0.3);
 }
@@ -499,6 +512,78 @@ img {
 }
 
 /**
+ * 4.1.1 - Read More Button - Static Font
+ */
+.cl-effect-button a {
+	padding: 0 20px;
+	height: 45px;
+	line-height: 45px;
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+}
+
+.cl-effect-button a::before,
+.cl-effect-button a::after {
+	position: absolute;
+	width: 45px;
+	height: 1px;
+	background: #C3C3C3;
+	content: '';
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	pointer-events: none;
+}
+
+.cl-effect-button a::before {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.cl-effect-button a::after {
+	right: 0;
+	bottom: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 100% 0;
+	-moz-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+
+.cl-effect-button a:hover::before,
+.cl-effect-button a:hover::after,
+.cl-effect-button a:focus::before,
+.cl-effect-button a:focus::after {
+	background: #000;
+}
+
+.cl-effect-button a:hover::before,
+.cl-effect-button a:focus::before {
+	left: 50%;
+	-webkit-transform: rotate(0deg) translateX(-50%);
+	-moz-transform: rotate(0deg) translateX(-50%);
+	transform: rotate(0deg) translateX(-50%);
+}
+
+.cl-effect-button a:hover::after,
+.cl-effect-button a:focus::after {
+	right: 50%;
+	-webkit-transform: rotate(0deg) translateX(50%);
+	-moz-transform: rotate(0deg) translateX(50%);
+	transform: rotate(0deg) translateX(50%);
+}
+
+/**
  * 4.2 - Read More Button CSS 3 style - 2-line
  */
 
@@ -506,7 +591,7 @@ img {
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 200;
 	word-spacing: 0px;
-	letter-spacing: 0em;
+	letter-spacing: 0.01em;
     line-height: 1em;
 	text-align: center;
 	margin-top: 5px;
@@ -519,7 +604,7 @@ img {
 	position: relative;
 	display: inline-block;
 	margin: 15px 25px;
-	letter-spacing: 1px;
+	letter-spacing: 0.01em;
 	font-weight: 400;
 	text-shadow: 0 0 1px rgba(255,255,255,0.3);
 }
@@ -582,6 +667,23 @@ img {
 	transform: rotate(0deg) translateX(50%);
 }
 
+
+/**
+ * 4.3 - Two-column "featured" section
+ */
+.center-feature {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: row nowrap;
+}
+.center-feature rowdiv {
+    flex: 1;
+    
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
 
 
 /**
@@ -1014,6 +1116,35 @@ img {
 		position: absolute;
 		right: 20px;
 	}
+    
+    .center-feature {
+        flex-direction:column;
+    }
+    
+    .wrap:hover .text {
+        opacity: 0;
+    }
+    
+    .figcaption {
+        display: none;
+    }
+    
+    .cl-effect-14 a,
+    .cl-effect2-14 a{
+        line-height: 1.5em;
+        font-size: clamp(1.5rem, 3.5vmin, 3.5vh);
+    }
+    
+    .cl-effect-14 a::before,
+    .cl-effect-14 a::after {
+        opacity: 0;
+    }
+    
+    .cl-effect2-14 a::before,
+    .cl-effect2-14 a::after {
+        opacity: 0;
+    }
+
 }
 
 @media (max-width: 767px) {
