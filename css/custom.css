@@ -109,11 +109,6 @@ figure figcaption {
     text-align: center;
 }
 
-figure figcaption-overlay {
-    text-align: center;
-    color: black;
-}
-
 .img-responsive-center img {
 	margin: 0 auto;
 }
