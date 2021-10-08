@@ -1125,7 +1125,7 @@ img {
         opacity: 0;
     }
     
-    .figcaption {
+    figure figcaption {
         display: none;
     }
     
