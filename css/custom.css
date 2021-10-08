@@ -1121,14 +1121,6 @@ img {
         flex-direction:column;
     }
     
-    .wrap:hover .text {
-        opacity: 0;
-    }
-    
-    figure figcaption {
-        display: none;
-    }
-    
     .cl-effect-14 a,
     .cl-effect2-14 a{
         line-height: 1.5em;
@@ -1164,6 +1156,14 @@ img {
 	.btn-5b:before {
 	    left: 0;
 	}
+    
+}
+
+@media (max-width: 600px) {
+	.wrap:hover .text {
+        opacity: 0;
+    }
+    
 }
 
 @media (max-width: 431px) {
@@ -1186,6 +1186,7 @@ img {
 		font-size: 0.9em;
 		line-height: 100%;
 	}
+    
 }
 
 @media screen and (max-height: 30.5em) {
