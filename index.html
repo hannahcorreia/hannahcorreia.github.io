@@ -31,11 +31,11 @@
 						<div class="logo">
 							<h1><a href="index.html"><b>Hannah Correia</a></h1> 
 								<div class="icon-bar">   
-									<a href="mailto:hcorrei2@jhu.edu" aria-label="GitHub profile">
-										<i aria-hidden="true" class="fas fa-envelope fa-2x" title="Go to my GitHub profile"></i>
+									<a href="mailto:hcorrei2@jhu.edu" aria-label="Email">
+										<i aria-hidden="true" class="fas fa-envelope fa-2x" title="Email me"></i>
 									</a> 
-									<a href="https://github.com/hannahcorreia" aria-label="Email">
-										<i aria-hidden="true" class="fab fa-github fa-2x" title="Email me"></i>
+									<a href="https://github.com/hannahcorreia" aria-label="GitHub profile">
+										<i aria-hidden="true" class="fab fa-github fa-2x" title="Go to my GitHub profile"></i>
 									</a> 
 									<a href="https://orcid.org/0000-0003-3476-3674" aria-label="ORCID profile">
 										<i aria-hidden="true" class="fab fa-orcid fa-2x" title="Go to my ORCID profile"></i>
@@ -43,6 +43,9 @@
 									<a href="https://www.researchgate.net/profile/Hannah-Correia" aria-label="ResearchGate profile">
 										<i aria-hidden="true" class="fab fa-researchgate fa-2x" title="Go to my ResearchGate profile"></i>
 									</a>
+									<a href="https://scholar.google.com/citations?user=TLSV788AAAAJ&hl=en&oi=ao" aria-label="Google Scholar profile">
+										<i aria-hidden="true" class="fab fa-google fa-2x" title="Go to my Google Scholar profile"></i>
+									</a> 
 								</div>  
 						</div>
 					</div><!-- col-md-4 -->
@@ -89,15 +92,17 @@
 								</h1>
 							</header>
 							<div class="entry-content clearfix">
-								<p>
+								<p2>
 									I am a Postdoctoral Fellow at the Johns Hopkins Whiting School of Engineering working with <a href="https://www.pauljferraro.com/">Dr. Paul Ferraro</a>. From 2019 to 2021, I was a Harvard Data Science Initiative Postdoctoral Fellow at the Harvard TH Chan School of Public Health. I earned a PhD in Biology and MS in Statistics from Auburn University.<br /><br /> 
-									I focus on the development and application of robust statistical and causal methods to estimate the consequences of environmental change, evaluate the role of interventions in modifying long-term human and animal behavior, and determining the efficacy of such behavioral changes to persisting outcomes for ecological, human, and planetary health.
+									I focus on the development and application of robust statistical and causal methods to estimate the consequences of environmental change, evaluate the role of interventions in modifying human and animal behaviors, and quantify the causes and effects of environmental and social changes on ecological, human, and planetary health.
 									<!-- My research interests broadly cover the area of statistical methods for ecological research, particularly developing new techniques to quantify climate change effects on populations and identifying causation in ecological data. I also develop robust statistical methods for spatiotemporal and high-dimensional data. -->
-									</p>
+									</p2>
 								<div class="read-more cl-effect-button">
 									<a href="https://hannahcorreia.github.io/uploads/correia_brief2024.pdf" class="more-link">Download CV</a>
 								</div>
-								<br />
+								
+								<hr>
+								</br>
 								
 								<h1 class="page-title"; style="font-size: clamp(3.5vmin, 5.5vmin, 5.5vmin)">
 									<a href="research.html">An overview of my research</a>
@@ -113,24 +118,39 @@
 					<div class="entry-content clearfix divrow">
 						
 						<main class="col-md-6 col-sm-12">
+							 <span class="read-more-tight cl-effect-14"><a href="/research.html#causal"><b>Causality in ecology</b></a></span>
+								<br \>
+							<span class="wrap">
+								<br \>
+								<figure class="img-responsive-center">
+									<img class="img-responsive" src="img/marine-fish-DAG2.jpg" alt="Causal diagram of hypothesized causal relationships between market value, catch, and population size of commercially important marine fish.">
+								</figure>
+								<span class="text">
+									<figcaption style="font-size: 2.2vmin; color:black;">Integrating and advancing causal inference methods for estimating nonlinear causal relationships in complex ecological systems<br /><br />(Image: Causal diagram illustrating hypothesized causal relationships between market value, catch, and population size of a commercially important marine fish species)</figcaption>
+								</span>
+								<!-- <figure class="img-responsive-center">
+									<img class="img-responsive" src="img/ccm_sf.png" alt="Plot of maximum correlation of cross-mapped versus observed values as a function of time series length">
+								</figure> -->
+								<!-- <span class="text">
+									<figcaption style="font-size: 2.2vmin; color:black;">Maximum correlation of cross-mapped versus observed values as a function of time series length for comparisons between environment, halibut, and cod (processes A, as columns) and sablfish CPUE (process B). Significant forcing of A on B is represented as red horizontal bars, while significant forcing of B on A are blue vertical bars. Non-significant relationships are indicated as dark grey horizontal bars (A&rarr;B) and vertical bars (B&rarr;A).</figcaption>
+								</span> -->
+								<!-- <figure class="img-responsive-center" style="padding-top: 3em; padding-bottom: 2em">
+									<img class="img-responsive" src="img/ccm_sf.png" alt="Plot of maximum correlation of cross-mapped versus observed values as a function of time series length">
+								</figure>
+								<span class="text">
+									<figcaption style="font-size: 2.2vmin; color:black;">Maximum correlation of cross-mapped versus observed values as a function of time series length for comparisons between environment, halibut, and cod (processes A, as columns) and sablfish CPUE (process B). Significant forcing of A on B is represented as red horizontal bars, while significant forcing of B on A are blue vertical bars. Non-significant relationships are indicated as dark grey horizontal bars (A&rarr;B) and vertical bars (B&rarr;A). Spearman’s rank correlation coefficient is represented as open circles. Empty plots indicate that there were insufficient observations from a complete time series for the multispatial CCM algorithm to begin. Plots with only Spearman’s indicate that the predictive ability of one or both processes did not significantly decrease with increasing time distance, so CCM was not performed.</figcaption>
+								</span> -->
+							</span>
+						</main>
+
+						<main class="col-md-6 col-sm-12">
 							<span class="read-more-tight cl-effect-14"><a href="/research.html#robust"><b>Robust estimation for non- and semi-parametric models</b></a></span>
 							<span class="wrap">
 								<figure class="img-responsive-center">
 									<img class="img-responsive" src="img/vcm_vc_rn400.jpg" alt="Plots of coefficient functions of a single-index varying coefficients regression model">
 								</figure>
 								<span class="text">
-									<figcaption style="font-size: 2.2vmin; color:black;">Coefficient functions of a single-index varying coefficients regression model estimated by RSGLASSO under CN(0.95) error distribution.</figcaption>
-								</span>
-							</span>
-						</main>
-						<main class="col-md-6 col-sm-12">
-							<span class="read-more-tight cl-effect2-14"><a href="/research.html#spatiotemporal"><b>Spatiotemporal effects of climate change on population dynamics</b></a></span>
-							<span class="wrap">
-								<figure class="img-responsive-center">
-									<img class="img-responsive" src="img/fish_reindeer.jpg" alt="Pacific halibut swimming near the bottom of the ocean; Eurasian reindeer grazing in snow in Tromsø, Norway">
-								</figure>
-								<span class="text">
-									<figcaption style="font-size: 2.2vmin; color:black;">Modeling predator-prey dynamics of adult groundfish (e.g. Pacific halibut, left) in the Gulf of Alaska. Spatial and temporal effects of plant productivity and herd condition on juvenile body mass of Eurasian reindeer (right) in Norway.</figcaption>
+									<figcaption style="font-size: 2.2vmin; color:black;">Developing and applying robust nonparametric statistical procedures for nonlinear modeling of climate change effects<br /><br />(Image: Coefficient functions of a single-index varying coefficients regression model estimated using rank-based estimation with group LASSO selection)</figcaption>
 								</span>
 							</span>
 						</main>
@@ -139,72 +159,73 @@
 				</div>
 
 
+				
 				<!-- second row of two-column feature section -->
-				<section class="row center-feature-2col">
-					<div class="entry-content clearfix">
-						
-						<main class="col-md-6 col-sm-12">
-							<span class="read-more-tight cl-effect-14"><a href="/research.html#paternity"><b>Exploring multiple paternity across clades</b></a></span>
-							<span class="wrap">
-								<figure class="img-responsive-center">
-									<img class="img-responsive" src="img/F1A_p_CL.jpg" alt="Estimated frequency of multiple paternity across litter sizes ranging from 2 to 10 for mammals">
-								</figure>
-								<span class="text">
-									<figcaption style="font-size: 2.2vmin; color:black;">Bayesian MCMC estimated frequency of multiple paternity across litter sizes for mammalian species (red points). The solid red line is the predicted frequency of multiple paternity using a zero-truncated binomial distribution.</figcaption>
-								</span>
-							</span>
-						</main>
-						
-						<main class="col-md-6 col-sm-12">
-							 <span class="read-more-tight cl-effect-14"><a href="/research.html#causal"><b>Causal inference in ecology</b></a></span>
-								<br \>
-							<span class="wrap">
-								<br \>
-								<figure class="img-responsive-center" style="padding-top: 3em; padding-bottom: 2em">
-									<img class="img-responsive" src="img/ccm_sf.png" alt="Plot of maximum correlation of cross-mapped versus observed values as a function of time series length">
-								</figure>
-								<span class="text">
-									<figcaption style="font-size: 2.2vmin; color:black;">Maximum correlation of cross-mapped versus observed values as a function of time series length for comparisons between environment, halibut, and cod (processes A, as columns) and sablfish CPUE (process B). Significant forcing of A on B is represented as red horizontal bars, while significant forcing of B on A are blue vertical bars. Non-significant relationships are indicated as dark grey horizontal bars (A&rarr;B) and vertical bars (B&rarr;A). Spearman’s rank correlation coefficient is represented as open circles. Empty plots indicate that there were insufficient observations from a complete time series for the multispatial CCM algorithm to begin. Plots with only Spearman’s indicate that the predictive ability of one or both processes did not significantly decrease with increasing time distance, so CCM was not performed.</figcaption>
-								</span>
-							</span>
-						</main>
-						
-					</div>
-				</section>
-
-
-				<!-- third row of two-column feature section -->
-				<!-- <section class="center-feature">
+				<section class="center-feature">
 						<div class="entry-content clearfix">
 							
 						<main class="col-md-6 col-sm-12">
-							<span class="read-more-tight cl-effect-14"><a href="/research.html#mathmodel">Mathematical models</a></span>
+							<span class="read-more-tight cl-effect2-14"><a href="/research.html#spatiotemporal"><b>Spatiotemporal effects of climate change on population dynamics</b></a></span>
 							<span class="wrap">
-								<br />
 								<figure class="img-responsive-center">
-									<img class="img-responsive" src="img/amboseli_elephants.jpg" alt="Herd of elephants on a grassy plain in Amboseli, Kenya">
+									<img class="img-responsive" src="img/fish_reindeer.jpg" alt="Pacific halibut swimming near the bottom of the ocean; Eurasian reindeer grazing in snow in Tromsø, Norway">
 								</figure>
 								<span class="text">
-									<figcaption style="font-size: 2.2vmin; color:black;">Population dynamics of Amboseli elephants (shown) adjusted for effects of rainfall on birth rates.</figcaption>
+									<figcaption style="font-size: 2.2vmin; color:black;">Modeling spatial and temporal effects of ecological, environmental, and climatic change on population and species dynamics of marine and terrestrial species at regional to continental scales <br /><br />(Image: Pacific halibut, left, and Eurasian reindeer, right)</figcaption>
 								</span>
 							</span>
-						</main>    
+						</main> 
 							
 						<main class="col-md-6 col-sm-12">
-							<span class="read-more-tight cl-effect-14"><a href="/research.html#mathmodel">Mathematical models</a></span>
+							<span class="read-more-tight cl-effect2-14"><a href="/research.html#imlpolicy">Causal and machine learning methods for explaining persistence of agricultural practices</a></span>
 							<span class="wrap">
 								<br />
 								<figure class="img-responsive-center">
-									<img class="img-responsive" src="img/amboseli_elephants.jpg" alt="Herd of elephants on a grassy plain in Amboseli, Kenya">
+									<img class="img-responsive" src="img/adoption_vs_persistence.png" alt="Decision tree showing how potential users transition into persisters or non-persisters over time">
 								</figure>
 								<span class="text">
-									<figcaption style="font-size: 2.2vmin; color:black;">Population dynamics of Amboseli elephants (shown) adjusted for effects of rainfall on birth rates.</figcaption>
+									<figcaption style="font-size: 2.2vmin; color:black;">Predicting and evaluating the persistence of conservation practices, such as cover cropping, in agriculture using machine learning and causal inference approaches<br /><br />(Image: Transition of conservation practice adoption to persistence over time, including churn of users dropping below a minimum threshold for persistent use of a conservation practice)</figcaption>
 								</span>
 							</span>
 						</main>
 							
 						</div>
-					</section> -->
+					</section> 
+
+
+					<!-- third row of two-column feature section -->
+					<section class="row center-feature-2col">
+						<div class="entry-content clearfix">
+							
+							<main class="col-md-6 col-sm-12">
+								<span class="read-more-tight cl-effect2-14"><a href="/research.html#paternity"><b>Examining the phenomenon of multiple paternity with an appropriate null model</b></a></span>
+								<!-- <span class="read-more-tight cl-effect2-14"><a href="/research.html#paternity"><b>Examining ecological phenomena through estimation of appropriate null models</b></a></span> -->
+								<span class="wrap">
+									<figure class="img-responsive-center">
+										<img class="img-responsive" src="img/p_CL_group.jpg" alt="Estimated frequency of multiple paternity across litter or broos sizes ranging from 2 to log(10) for a variety of species across four taxa">
+									</figure>
+									<span class="text">
+										<figcaption style="font-size: 2.2vmin; color:black;">Examining evolutionary and environmental constraints to multiple paternity across taxa by contrasting empirical data on multiple paternity to estimates under a null model<br /><br />(Image: Bayesian MCMC predictions of the frequency of multiple paternity across litter/brood sizes for species belonging to four taxa (colored circles). The solid red line represents the frequency of multiple paternity estimated using a zero-truncated binomial distribution)</figcaption>
+									</span>
+								</span>
+							</main>
+
+							<main class="col-md-6 col-sm-12">
+								<span class="read-more-tight cl-effect2-14"><a href="/research.html#imlpolicy">Interpretable machine learning methods for identifying causes of HIV-related stigma</a></span>
+								<span class="wrap">
+									<br />
+									<figure class="img-responsive-center">
+										<img class="img-responsive" src="img/dhs_eafrica_2003.png" alt="Map of East Africa with regions shaded to represent the level of association between formal education achievement and HIV-related stigma">
+									</figure>
+									<span class="text">
+										<figcaption style="font-size: 2.2vmin; color:black;">Developing novel workflows combining interpretable machine learning methods and causal reasoning for identifying causes of and interventions for HIV-related stigma<br /><br />(Image: Association between formal education and HIV-related stimga in Eastern Africa from Demographic and Health Survey data)</figcaption>
+									</span>
+								</span>
+							</main>   
+							
+						</div>
+					</section>
+
 				</div>
 			</div>
 		</div> <!-- end of body -->
