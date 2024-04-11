@@ -119,6 +119,12 @@ figure figcaption {
     text-align: center;
 }
 
+figure figcaption2 {
+    text-align: center;
+    font-size: 2.2vmin;
+    color: black;
+}
+
 .img-responsive-center img {
 	margin: 0 auto;
 }
