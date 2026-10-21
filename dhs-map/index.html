@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>East Africa DHS Data</title>
+<link rel="stylesheet" href="lib/leaflet.css">
+<style>
+  :root { --ink:#222; --muted:#666; --line:#ddd; }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; font: 14px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); }
+  header { position: absolute; top: 0; left: 0; right: 0; height: 46px; display: flex; align-items: center;
+           gap: 16px; padding: 0 16px; background: #f8f8f8; border-bottom: 1px solid var(--line); z-index: 1200; }
+  header h1 { font-size: 18px; font-weight: 400; margin: 0; }
+  header span { color: var(--muted); }
+  #map { position: absolute; top: 46px; bottom: 0; left: 0; right: 0; }
+  .panel { position: absolute; z-index: 1100; background: rgba(255,255,255,.93); border: 1px solid var(--line);
+           border-radius: 4px; box-shadow: 0 1px 6px rgba(0,0,0,.2); padding: 8px 12px; }
+  .panel h4 { margin: 4px 0 6px; font-size: 16px; }
+  .panel h5 { margin: 4px 0 6px; font-size: 14px; }
+  .panel p { margin: 4px 0; }
+  .note { font-size: 11px; color: var(--muted); }
+  #controls { top: 58px; right: 16px; width: 340px; padding: 8px 14px 12px; }
+  #controls label { display: block; margin: 8px 0 2px; color: var(--muted); }
+  #controls select { width: 100%; padding: 5px 6px; }
+  #relationship { font-weight: 600; margin-bottom: 4px; }
+  .slider-row { display: flex; align-items: center; gap: 8px; }
+  #period { flex: 1; }
+  #play { padding: 3px 8px; white-space: nowrap; }
+  #period_labels { display: flex; justify-content: space-between; font-size: 11px; color: var(--muted); margin-top: 2px; }
+  #period_labels .on { color: var(--ink); font-weight: 600; }
+  #legend { display: grid; grid-template-columns: 22px 1fr; grid-template-rows: 170px auto; gap: 4px 6px; margin-top: 10px; }
+  #legend_y { writing-mode: vertical-rl; transform: rotate(180deg); text-align: center; font-size: 11px; }
+  #legend_x { grid-column: 2; text-align: center; font-size: 11px; }
+  #legend_grid { display: grid; background: #fff; border: 1px solid var(--line); }
+  #legend_grid .cell { min-height: 0; }
+  #county { top: 58px; left: 62px; width: 440px; }
+  #county table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  #county th, #county td { text-align: left; padding: 3px 6px; border-bottom: 1px solid var(--line); }
+  #county tr.now td { font-weight: 700; }
+  #county_close { float: right; background: none; border: 0; color: #2a6ebb; cursor: pointer; }
+  .sw { display: inline-block; width: 14px; height: 14px; border: 1px solid #999; }
+  #assoc { left: 16px; bottom: 44px; width: 340px; }
+  #cite { position: absolute; z-index: 1100; left: 0; right: 0; bottom: 0; padding: 3px 10px; font-size: 11px;
+          color: var(--muted); background: rgba(255,255,255,.85); }
+  #status { position: absolute; z-index: 1300; top: 60px; left: 50%; transform: translateX(-50%); max-width: 640px;
+            background: #fff3cd; border: 1px solid #e0c97a; padding: 10px 14px; border-radius: 4px; }
+  .leaflet-container { font: inherit; }
+  @media (max-width: 760px) {
+    #controls { left: 8px; right: 8px; width: auto; top: 54px; max-height: 52vh; overflow: auto; }
+    #county { left: 8px; right: 8px; width: auto; top: auto; bottom: 150px; }
+    #assoc { left: 8px; right: 8px; width: auto; bottom: 44px; max-height: 120px; overflow: auto; }
+  }
+</style>
+</head>
+<body>
+<header><h1>East Africa DHS Data</h1><span>Interactive map</span></header>
+<div id="map"></div>
+<div id="status" hidden></div>
+
+<section id="controls" class="panel">
+  <h4>Relationship explorer</h4>
+  <div id="relationship"></div>
+  <label for="x_var">Independent variable:</label>
+  <select id="x_var"></select>
+  <label for="y_var">Dependent variable:</label>
+  <select id="y_var"></select>
+  <label for="period">Years:</label>
+  <div class="slider-row">
+    <input id="period" type="range" min="0" max="2" step="1" value="0">
+    <button id="play" type="button">&#9654; Play</button>
+  </div>
+  <div id="period_labels"></div>
+  <label for="viridis_pal">Color palette:</label>
+  <select id="viridis_pal"></select>
+  <div id="legend">
+    <div id="legend_y"></div>
+    <div id="legend_grid"></div>
+    <div id="legend_x"></div>
+  </div>
+</section>
+
+<section id="county" class="panel" hidden>
+  <button id="county_close" type="button">close &times;</button>
+  <h4 id="county_title"></h4>
+  <table id="county_table"></table>
+</section>
+
+<section id="assoc" class="panel"></section>
+
+<div id="cite">Data compiled by: Central Bureau of Statistics (CBS) [Kenya], Ministry of Health (MOH) [Kenya], and ORC Macro (2004); Kenya National Bureau of Statistics (KNBS) and ICF Macro (2010, 2014).</div>
+
+<script src="lib/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
